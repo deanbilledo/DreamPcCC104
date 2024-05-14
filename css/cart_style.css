@@ -1,0 +1,55 @@
+
+.table_bottom {
+    float: right; /* This will align the div to the right */
+    /* Add other styles as needed */
+    }
+    
+    
+    
+    /* Clear float after the .table_bottom div if needed */
+    .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+    
+    container {
+        display: flex;
+        justify-content: flex-end; /* Aligns child elements to the right */
+    }
+    
+    .table_bottom {
+        display: flex;
+        justify-content: flex-end; /* Aligns child elements to the right */
+        padding: 10px;
+        border-radius: 20px;
+        background-color: #eb3a3a; /* Light grey background */
+        border-top: 1px solid #e1e1e1; 
+    }
+    
+    .bottom_btn {
+        margin-left: 10px; /* Spacing between buttons */
+        padding: 10px 15px;
+        text-decoration: none;
+        color: #ffffff; /* White text */
+        background-color: #333; /* Bootstrap primary blue */
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }   
+    
+    .bottom_btn:hover {
+        background-color: #ff523b; /* Darker blue on hover */
+    }
+    
+    .bottom_btn.h3 {
+        background-color: transparent; /* No background for the h3 tag */
+        color: #333; /* Dark grey text */
+        margin-left: 0; /* Resetting margin for h3 */
+        padding-left: 0; /* Resetting padding for h3 */
+    }
+    .total-price{
+        padding: 10px;
+    }
+    
+    

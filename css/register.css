@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+body {
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('../images/true.jpg');
+    background-size: cover;
+    background-position: center;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+p{
+    color: #ffffff; 
+}
+
+.header{
+    background-color: rgba(228, 59, 59, 0.8);
+    height: 100%;
+}
+.header .row{
+    margin-top: 70px;
+}
+
+.input-box input {
+
+    width: 350%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: wheat;
+    padding: 20px 45px 20px 20px;
+    display: block;
+
+}
+.input-box label{
+    text-align: center;
+}
+
+
+.input-box input::placeholder {
+
+    color: wheat;
+    transition: color 0.5s ease;
+
+}
+
+.input-box input:focus::placeholder {
+
+    color: transparent;
+    animation: fadeOut 0.5s ease forwards;
+    
+}
+
+.input-box i {
+
+    position: absolute;
+    right: -240px;
+    top: 75%;
+    font-size: 20px;
+    
+}
+
+.wrapper .remember-forgot {
+    
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    
+}
+
+.remember-forgot label input {
+
+    accent-color: wheat;
+    margin-right: 3px;
+
+}
+
+.remember-forgot a {
+    
+    color: wheat;
+    text-decoration: none;
+
+}
+
+.remember-forgot a :hover {
+
+    text-decoration: underline;
+
+}
+
+.wrapper .btn {
+
+    width: 100%;
+    height: 45px;
+    background: wheat;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+
+}
+
+.wrapper .register-link {
+
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px;
+
+}
+
+.register-link a  {
+
+    color: wheat;
+    text-decoration: none;
+    font-weight: 600;
+  
+  }
+  .register-link p  {
+  
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 600;
+  
+  }
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
+
+
+.container1{
+    max-width: 1300px;
+    margin:auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+.btn{
+    display: inline-block;
+    background: #4a4646;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition-duration: 0.5s;
+}
+.btn:hover{
+    background: #ff0000;
+}
+
+
+
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+.container {
+  position: relative;
+  max-width: 700px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  background: transparent;
+  border: 3px solid rgba(255, 255, 255, .2);
+  backdrop-filter: blur(20px);
+  border-radius: 15px;
+  padding: 30px 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.container .head {
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-weight: 500;
+  text-align: center;
+}
+.container .form {
+  margin-top: 30px;
+}
+.form .input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+.input-box label {
+  color: rgb(255, 255, 255);
+}
+.form .input-box input {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 40px;
+  color: wheat;
+  padding: 20px 45px 20px 20px;
+  display: block;
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  margin-top: 8px;
+}
+
+.form .column {
+  display: flex;
+  column-gap: 15px;
+}
+
+.form button {
+  display: inline-block;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+  transition-duration: 0.5s;
+  height: 55px;
+  width: 100%;
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: wheat;
+}
+.form button:hover {
+  background: #ff0000;
+}
+
+
+
+
+/* MEDIA QUERY NA TO DITO------------------------------------------------------------------------------*/
+
+
+
+
+/* media query for screen less than 600px */
+
+@media only screen and (max-width: 600px){
+
+    .row{
+        text-align: center;
+    }
+    .col-2, .col-3, .col-4{
+        flex-basis: 100%;
+    }
+
+}
+@media (max-width: 768px) {
+    .search-container {
+      flex-wrap: wrap; /* Wrap elements on smaller screens */
+    }
+  
+    .search-bar {
+      width: 100%; /* Take full width on smaller screens */
+    }
+  }
+
+
+@keyframes fadeOut {
+  from {
+      opacity: 1; /* Start with full opacity */
+  }
+  to {
+      opacity: 0; /* Fade out to completely transparent */
+  }
+}
+
+
+/*Responsive*/
+@media screen and (max-width: 500px) {
+  .form .column {
+    flex-wrap: wrap;
+  }
+}
+
+
+/*---mdei query for menu ------*/
+
+@media only screen and (max-width: 800px){
+
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+        text-align: center;
+    }
+
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a{
+        color: #fff;
+    }
+
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+
+    
+}
+
+
+@keyframes fadeOut {
+    from {
+        opacity: 1; /* Start with full opacity */
+    }
+    to {
+        opacity: 0; /* Fade out to completely transparent */
+    }
+}

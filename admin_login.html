@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Dream PC | Ecommerce Website</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/dreampc logo.png" width="125px">
+                </div>
+
+                    <nav>
+                        <ul id="MenuItems">
+                            <li><a href="./index.html">Home</a></li>    
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="login.html">Account</a></li>
+                        </ul>
+                    </nav>
+                    <img src="images/images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+    </div>
+    
+    <div class="wrapper">
+        <form action="./php/admin_login.php" method="post">
+            <h1>Admin Login</h1>
+
+            <div class="input-box">
+                <label>Username</label>
+                <input type="text" placeholder="Username" name="admin_username" required>
+                <i class='bx bx-user'></i>
+            </div>
+            <div class="input-box">
+                <label>Password</label>
+                <input type="password" placeholder="Password" name="admin_password" required>
+                <i class='bx bx-lock-alt'></i>
+            </div>
+
+            <button type="submit" class="btn">Login As Admin</button>
+
+            <div class="register-link">
+                <p>Don't Have An Admin Account?<a href="admin_register.html">Register</a></p>
+            </div>
+
+            <div class="register-link">
+                <p>Are You A    User?<a href="login.html">Login</a></p>
+            </div>
+        </form>
+
+
+    </div>
+
+    
+
+
+    <!---------JS for toggle menu --------->
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px"){
+                MenuItems.style.maxHeight = "200px"
+            }
+            else{
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+
+</body>
+</html>
